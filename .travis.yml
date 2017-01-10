@@ -1,11 +1,13 @@
 language: ruby
 rvm:
   - 1.9.3
+sudo: required
 install:
   - sudo apt-get update -q
-  - sudo apt-get install -q virtualbox --fix-missing # Everything falls apart here exactly.
+  - sudo apt-get install -q virtualbox-dkms virtualbox --fix-missing # Everything falls apart here exactly.
   - sudo wget -nv https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.deb
   - sudo dpkg -i vagrant_1.9.1_x86_64.deb
+  - uname -a
 script:
   - sudo vagrant up # The error is only presented when executing vagrant up
 after_script:
