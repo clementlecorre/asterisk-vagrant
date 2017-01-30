@@ -9,7 +9,7 @@ BASE_DIR="/usr/src/asterisk"
 apt-get -y update
 apt-get install -y wget aptitude linux-headers-`uname -r` \
                   build-essential libxml2-dev libncurses5-dev \
-                  libsqlite3-dev uuid-dev libjansson-dev
+                  libsqlite3-dev uuid-dev libjansson-dev vim
 if [ ! -d "${BASE_DIR}" ]; then
   mkdir ${BASE_DIR}
 fi

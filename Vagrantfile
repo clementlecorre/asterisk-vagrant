@@ -8,5 +8,6 @@
 Vagrant.configure("2") do |config|
 
   config.vm.box = "debian/jessie64"
+  config.vm.network "private_network", ip: "192.168.100.14"
   config.vm.provision :shell, :path => "libs/01-install.sh"
 end
