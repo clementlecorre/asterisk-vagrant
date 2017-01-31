@@ -10,7 +10,7 @@ apt-get -y update
 apt-get install -y wget aptitude linux-headers-`uname -r` \
                   build-essential libxml2-dev libncurses5-dev \
                   libsqlite3-dev uuid-dev libjansson-dev vim fail2ban \
-                  subversion perl mpg123
+                  subversion perl libwww-perl sox mpg123
 if [ ! -d "${BASE_DIR}" ]; then
   mkdir ${BASE_DIR}
 fi
