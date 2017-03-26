@@ -32,7 +32,7 @@ vagrant up
 # Template assignment
 
 | Departement |  template |
-| --------------- |:------------|:------------|
+| --------------- |:------------|
 | Marketing | marketing_5762_tpl  |
 | Developers | developers_6671_tpl |
 | Direction | direction_8289_tpl |
